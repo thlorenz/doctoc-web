@@ -12,8 +12,11 @@
     "node": "~0.6.6"
   },
   "dependencies": {
-      "express": ">=2.5.9"
-    , "jade": ">= 0.0.1"
+      "express" :  ">=2.5.9",
+      "jade"    :  ">= 0.0.1",
+      "stylus"  :  ">=0.27"
   },
-  "devDependencies": {}
+  "devDependencies": {
+      "nodemon" :  ">=0.6"
+  }
 }
