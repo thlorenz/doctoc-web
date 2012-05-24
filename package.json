@@ -1,0 +1,19 @@
+{
+  "author": "Thorsten Lorenz <thlorenz@gmx.de> (thorstenlorenz.wordpress.com)",
+  "name": "github-doc-toc",
+  "description": "Generates table of contents for markdown files on github",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thlorenz/github-doc-toc.git"
+  },
+  "main": "app",
+  "engines": {
+    "node": "~0.6.6"
+  },
+  "dependencies": {
+  
+      "express": ">=2.5.9"
+  },
+  "devDependencies": {}
+}
