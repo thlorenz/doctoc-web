@@ -3,7 +3,7 @@ var processor = require('./../processing/processor');
 var options = {
     host: 'github.com',
     port: 443,
-    path: '/thlorenz/doc-toc/blob/master/README.md'
+    path: '/thlorenz/dox/blob/master/dev/jquery.md'
 };
 
 exports.tocit = function(req, res){

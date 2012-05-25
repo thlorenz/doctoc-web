@@ -6,7 +6,7 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-image: url("/images/background.jpg");
 }
-#wrapper {
+div#wrapper {
   min-height: 90%;
   height: auto !important;
   height: 100%;
@@ -17,12 +17,24 @@ body {
   padding: 15px;
   margin: 50px 100px;
 }
-#header {
+div#header {
   color: #882;
   height: 50px;
 }
-#footer {
+dif#footer {
   height: 30px;
+}
+#result {
+  min-height: 800px;
+  background: #ddd;
+  border-radius: 5px;
+}
+#result textarea {
+  min-height: 800px;
+  min-width: 100%;
+  readonly: 'readonly';
+  background: #ddd;
+  border-radius: 5px;
 }
 a {
   color: #add8e6;
@@ -39,5 +51,5 @@ input {
   margin: 20px;
 }
 .wide-text {
-  width: 80%;
+  width: 85%;
 }

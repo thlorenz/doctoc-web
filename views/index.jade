@@ -7,14 +7,17 @@ div#wrapper
 
         div#content
             
-            form#tocit(action="/tocit", method="GET")
-                | Enter Url that contains markdown file:
+            div 
+                form#tocit(action="/tocit", method="GET")
+                    | Enter Url that contains markdown file:
 
-                input#url.wide-text.url-entry(
-                    type="url", name="url", 
-                    placeholder="e.g., https://github.com/thlorenz/doc-toc/blob/master/README.md")
+                    input#url.wide-text.url-entry(
+                        type="url", name="url", 
+                        placeholder="e.g., https://github.com/thlorenz/doc-toc/blob/master/README.md")
 
-                input#submit(type="submit", value="submit")
+                    input#submit(type="submit", value="submit")
+            div#result
+                textarea(readonly="readonly")
 
         div#footer.bottom
             a(href="http://www.grsites.com") background courtesy of grsites.com
