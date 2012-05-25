@@ -1,20 +1,43 @@
+html,
 body {
-  padding: 50px;
+  height: 100%;
+}
+body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-image: url("/images/background.jpg");
+}
+#wrapper {
+  min-height: 90%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -35px;
+  background: #215;
+  border-radius: 20px;
+  color: #aaa;
+  padding: 15px;
+  margin: 50px 100px;
+}
+#header {
+  color: #882;
+  height: 50px;
+}
+#footer {
+  height: 30px;
 }
 a {
   color: #add8e6;
 }
 label,
 input {
-  margin: 10px;
+  margin: 15px 15px 15px 0px;
   height: 20px;
 }
 .bottom {
   position: fixed;
   bottom: 0;
+  left: 0;
+  margin: 20px;
 }
 .wide-text {
-  width: 500px;
+  width: 80%;
 }
