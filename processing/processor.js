@@ -1,4 +1,4 @@
-var $ = require('jQuery'),
+var $ = require('jquery'),
     _ = require('underscore'),
     download = require ('./download');
 
