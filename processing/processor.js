@@ -12,7 +12,7 @@ function getParagraphHeaders (html) {
             return {    
                 rank: h.tagName.substr(1),
                 link: '#' + $a.attr('name'),
-                name: $h.text()
+                name: $h.text().replace(/(\r\n|\n|\r)/gm,'')
             };
         });
 }
