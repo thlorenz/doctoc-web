@@ -1,5 +1,6 @@
 var util = require('util'),
-    https = require('https');
+    https = require('https'),
+    fs    = require('fs');
 
 exports.getHttpsPage = function(options, cb) {
     var completedOptions = {
@@ -26,12 +27,15 @@ exports.getHttpsPage = function(options, cb) {
     req.end();
 };
 
-var options = {
-    host: 'github.com',
-    port: 443,
-    path: '/thlorenz/doc-toc/blob/master/README.md'
+// Mainly for testing purposes
+exports.getFilePage = function(path, cb) {
+    fs.readFile(path, 'utf8', function (err, data) {
+        if (err) { 
+            console.error(err); 
+            cb(err);
+        } else {
+            cb(null, data);
+        }
+    });
 };
 
-exports.getHttpsPage(options, function (err, content) {
-    if (err) console.error (err); else console.log(content);
-});

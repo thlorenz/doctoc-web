@@ -19,5 +19,4 @@
     }
 
     $tocit.on('submit', function(event){ event.preventDefault(); submit(); });
-    //$submit.on('click', go);
 })(jQuery);
