@@ -1,27 +1,67 @@
-div#wrapper
+#wrapper
+  .vspace
+  .clear
 
-    div.vspace
-
-    div#header
+  div
+    .centerCol
+      #header.shadow
         h1= title
-    div.clear
-    div.vspace
+      .centerColBackground
+      .centerColContent
+        .content
+          div
+            form#tocit.shadow(action="/tocit", method="GET")
+              | Enter Url that contains markdown file:
 
-    div
-        div.centerCol
-            div.centerColBackground
-            div.centerColContents
+              input#url.wide-text.url-entry(
+                type="url", 
+                name="url", 
+                placeholder="e.g., https://github.com/thlorenz/doc-toc/blob/master/README.md")
 
-                div 
-                    form#tocit(action="/tocit", method="GET")
-                        | Enter Url that contains markdown file:
+              input#submit.button(type="submit", value="GO")
+          .vspace
 
-                        input#url.wide-text.url-entry(
-                            type="url", name="url", 
-                            placeholder="e.g., https://github.com/thlorenz/doc-toc/blob/master/README.md")
+          #result
+            label.shadow Paste the below generated content on top of you markdown file:
+            br
+            textarea(readonly="readonly")
+              | # Table of Contents
+              |   - <a href="#event-object">Event Object</a>
+              |   - <a href="#creation">Creation</a>
+              |   - <a href="#properties">Properties</a>
+              | - <a href="#propagation">Propagation</a>
+              | - <a href="#performance">Performance</a>
+              |   - <a href="#advantages-of-using-selector-delegated-evenst">Advantages of using selector (delegated evenst)</a>
+              | - <a href="#on-vs-bind-live-and-delegate">on vs bind, live and delegate</a>
+              | - <a href="#on">.on</a>
+              |   - <a href="#signatures">Signatures</a>
+              | - <a href="#off">.off</a>
+              |   - <a href="#signatures-1">Signatures</a>
+              | - <a href="#trigger">.trigger</a>
+              |   - <a href="#signatures-2">Signatures</a>
+              | - <a href="#widget-factory">Widget Factory</a>
+              | - <a href="#what">What</a>
+              | - <a href="#why">Why</a>
+              | - <a href="#building-prototype">Building Prototype</a>
+              |   - <a href="#infrastructure">Infrastructure</a>
+              |   - <a href="#private-vs-public-methods">Private vs. Public Methods</a>
+              |   - <a href="#instance-properties">Instance Properties</a>
+              |     - <a href="#element">element</a>
+              |     - <a href="#options">options</a>
+              |     - <a href="#namespace-name">namespace, name</a>
+              |     - <a href="#widgeteventprefix">widgetEventPrefix</a>
+              |     - <a href="#widgetbaseclass">widgetBaseClass</a>
+              |   - <a href="#extra-instance-methods-not-mentioned-in-infrastructure">Extra Instance Methods (not mentioned in Infrastructure)</a>
+              |     - <a href="#_init">_init</a>
+              |     - <a href="#option">option</a>
+              |     - <a href="#enabledisable">enable/disable</a>
+              |     - <a href="#_trigger">_trigger</a>
+              |   - <a href="#inner-workings">Inner Workings</a>
 
-                        input#submit(type="submit", value="submit")
-                div#result
-                    textarea(readonly="readonly")
+      #page-footer.shadow
+        a(href="https://github.com/thlorenz/doc-toc")
+          | source on github
+        a(href="http://www.grsites.com/")
+          | background image
 
 script(src="javascripts/root.js", type="text/javascript")

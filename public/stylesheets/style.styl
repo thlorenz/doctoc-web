@@ -1,61 +1,97 @@
-footer-height = 30px
-header-height = 50px
-panel-min-width = 500px
+@import 'reset.css'
+@import 'synonyms.styl'
+
+centerColWidth = 70em
+
+vendor(prop, args)
+  -webkit-{prop} args
+  -moz-{prop} args
+  {prop} args
+
+border-radius()
+  vendor('border-radius', arguments)
+
+box-shadow()
+  vendor('box-shadow', arguments)
 
 html
-body
-    height: 100%
+  background: #ccc url(../images/background.jpg) top center
 
 body
-    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
-    background-image: url(/images/background.jpg)
+  font-family: arial
+  font-size: 14px
 
-div#wrapper
-    min-height :  90%
-    height     :  auto !important
-    height     :  100%
-    margin 0 auto -(footer-height + 5px)
+.content 
+  font-size         :  1.1em !important
+  h1
+    font-size       :  1.6em
+    margin          :  0.4em 0 0.4em 0
+  h2
+    font-size       :  1.4em
+  h3
+    font-size       :  1.2em
+  a
+    color           :  #A71500
+    text-decoration :  underline
 
-    background    :  #215
-    border-radius :  20px
-    color         :  #AAA
-    padding       :  15px
-    margin        :  50px 100px
+  form
+    margin          :  0
+    padding         :  0
 
-div#header
-    color: #882
-    height: header-height
+#result textarea
+  background :  #333
 
-dif#footer
-    height: footer-height
+  min-width  :  80%
+  width      :  90%
+  max-width  :  95%
 
-#result
-    min-height: 800px
-    background: #DDD
+  min-height :  40em
+  height     :  70%
 
-    border-radius: 5px
+  color: lightgreen
+  line-height: 1.4em
 
-    textarea
-        min-height: 800px
-        min-width: 100%
-        readonly: 'readonly'
-        background: #DDD
-        border-radius: 5px
+#wrapper
+  margin :  0 auto
+  width  :  982px
 
-a
-    color: lightblue 
+#header
+    margin      :  0em 0em 0.4em 0
+    font-size   :  30px
+    color: #350808
+    text-shadow: rgba(253, 204, 197, 0.4) 1px 1px 0px
 
-label
-input 
-    margin: 15px 15px 15px 0px
-    height: 20px
+.centerCol
+  position :  absolute
+  width    :  centerColWidth
+  padding  :  1em
+  color    :  #FED
 
-.bottom
-    position: fixed
-    bottom: 0
-    left: 0
-    margin: 20px
+.centerColBackground
+  background-color: darkblue
+  opacity: 0.5
+  position: absolute
+  width: centerColWidth
+  height: 100%
+  z-index: -1
 
-.wide-text
-    width: 85% 
+  border-radius 1em
+  box-shadow    0 0 1.1em #111
 
+.centerColContent
+  width: centerColWidth - 1
+  padding: 3.5em
+
+#page-footer
+  margin-left: 3.5em
+  a
+    margin-left: 1em
+
+.vspace
+  height: 2em
+
+.button
+  background: orange
+  margin:     1em
+  border-radius 0.2em
+  box-shadow    0 0 0.5em #111
