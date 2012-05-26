@@ -4,9 +4,6 @@
         $tocit  = $('#tocit'),
         $result = $('#result > textarea:first');
 
-    $url.attr('value', 'https://github.com/thlorenz/doc-toc/blob/master/README.md');
-
-
     function submit() {
 
         $.ajax({
@@ -28,7 +25,6 @@
                     })
                     .join('\n');
                 $result.html(result);
-                console.log(result);
                 }
             });
     }
