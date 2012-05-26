@@ -54,28 +54,12 @@ html {
 }
 body {
   font-family: arial;
-  font-size: 14px;
+  font-size: 16px;
 }
-.content {
-  font-size: 1.1em !important;
-}
-.content h1 {
-  font-size: 1.6em;
-  margin: 0.4em 0 0.4em 0;
-}
-.content h2 {
-  font-size: 1.4em;
-}
-.content h3 {
-  font-size: 1.2em;
-}
-.content a {
-  color: #a71500;
-  text-decoration: underline;
-}
-.content form {
+body form {
   margin: 0;
   padding: 0;
+  max-height: 80px;
 }
 #result textarea {
   background: #333;
@@ -86,19 +70,28 @@ body {
   height: 70%;
   color: #90ee90;
   line-height: 1.4em;
+  font-size: 14px;
+  white-space: pre;
 }
 #wrapper {
   margin: 0 auto;
-  width: 982px;
+  width: 1200px;
 }
 #header {
   margin: 0em 0em 0.4em 0;
-  font-size: 30px;
   color: #350808;
   text-shadow: rgba(253,204,197,0.4) 1px 1px 0px;
 }
+#header h1 {
+  font-size: 30px;
+  margin: 0em 0em 0.4em 0em;
+}
+#header span {
+  font-size: 12px;
+  margin: 0em 0em 0em 5em;
+}
 .centerCol {
-  position: absolute;
+  position: relative;
   width: 70em;
   padding: 1em;
   color: #fed;
@@ -119,10 +112,11 @@ body {
 }
 .centerColContent {
   width: 69em;
-  padding: 3.5em;
+  padding: 2em 3.5em 2em 3.5em;
 }
 #page-footer {
   margin-left: 3.5em;
+  margin-bottom: 0em;
 }
 #page-footer a {
   margin-left: 1em;

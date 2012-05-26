@@ -6,12 +6,14 @@
     .centerCol
       #header.shadow
         h1= title
+        span 
+          | Generates table of content for markdown files inside github repositories
       .centerColBackground
       .centerColContent
         .content
           div
-            form#tocit.shadow(action="/tocit", method="GET")
-              | Enter Url that contains markdown file:
+            form#tocit(action="/tocit", method="GET")
+              label.shadow Enter Url that contains markdown file:
 
               input#url.wide-text.url-entry(
                 type="url", 
@@ -19,10 +21,8 @@
                 placeholder="e.g., https://github.com/thlorenz/doc-toc/blob/master/README.md")
 
               input#submit.button.shadow(type="submit", value="GO")
-          .vspace
-
           #result
-            label.shadow Paste the below generated content on top of you markdown file:
+            label.shadow Paste below generated content at the top of your markdown file:
             br
             textarea(readonly="readonly")
 

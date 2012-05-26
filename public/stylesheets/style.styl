@@ -19,24 +19,13 @@ html
 
 body
   font-family: arial
-  font-size: 14px
-
-.content 
-  font-size         :  1.1em !important
-  h1
-    font-size       :  1.6em
-    margin          :  0.4em 0 0.4em 0
-  h2
-    font-size       :  1.4em
-  h3
-    font-size       :  1.2em
-  a
-    color           :  #A71500
-    text-decoration :  underline
+  font-size: 16px
 
   form
     margin          :  0
     padding         :  0
+    max-height      : 80px
+
 
 #result textarea
   background :  #333
@@ -50,19 +39,27 @@ body
 
   color: lightgreen
   line-height: 1.4em
+  font-size: 14px
+
+  white-space: pre
 
 #wrapper
   margin :  0 auto
-  width  :  982px
+  width  :  1200px
 
-#header
+#header 
     margin      :  0em 0em 0.4em 0
-    font-size   :  30px
     color: #350808
     text-shadow: rgba(253, 204, 197, 0.4) 1px 1px 0px
+    h1 
+      font-size   :  30px
+      margin      :  0em 0em 0.4em 0em 
+    span
+      font-size   :  12px
+      margin      :  0em 0em 0em 5em 
 
 .centerCol
-  position :  absolute
+  position :  relative
   width    :  centerColWidth
   padding  :  1em
   color    :  #FED
@@ -80,10 +77,11 @@ body
 
 .centerColContent
   width: centerColWidth - 1
-  padding: 3.5em
+  padding: 2em 3.5em 2em 3.5em
 
 #page-footer
   margin-left: 3.5em
+  margin-bottom: 0em
   a
     margin-left: 1em
 

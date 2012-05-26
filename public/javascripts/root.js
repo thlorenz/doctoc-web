@@ -24,7 +24,9 @@
                         return indent + '- &lt;a href=&quot;' + x.link + '&quot;&gt;' + x.name + '&lt;/a&gt;';
                     })
                     .join('\n');
-                $result.html(result);
+
+                var title ='**Table of Contents**  *generated with [DocToc](http://doc-toc.herokuapp.com/)*\n';
+                $result.html(title + result);
                 }
             });
     }
