@@ -1,25 +1,35 @@
-div#wrapper
+#wrapper
+  .vspace
+  .clear
 
-    div#wrapper
+  div
+    .centerCol
+      #header.shadow
+        h1= title
+      .centerColBackground
+      .centerColContent
+        .content
+          div
+            form#tocit.shadow(action="/tocit", method="GET")
+              | Enter Url that contains markdown file:
 
-        div#header
-            h1= title
+              input#url.wide-text.url-entry(
+                type="url", 
+                name="url", 
+                placeholder="e.g., https://github.com/thlorenz/doc-toc/blob/master/README.md")
 
-        div#content
-            
-            div 
-                form#tocit(action="/tocit", method="GET")
-                    | Enter Url that contains markdown file:
+              input#submit.button(type="submit", value="GO")
+          .vspace
 
-                    input#url.wide-text.url-entry(
-                        type="url", name="url", 
-                        placeholder="e.g., https://github.com/thlorenz/doc-toc/blob/master/README.md")
+          #result
+            label.shadow Paste the below generated content on top of you markdown file:
+            br
+            textarea(readonly="readonly")
 
-                    input#submit(type="submit", value="submit")
-            div#result
-                textarea(readonly="readonly")
-
-        div#footer.bottom
-            a(href="http://www.grsites.com") background courtesy of grsites.com
+      #page-footer.shadow
+        a(href="https://github.com/thlorenz/doc-toc")
+          | source on github
+        a(href="http://www.grsites.com/")
+          | background image
 
 script(src="javascripts/root.js", type="text/javascript")
