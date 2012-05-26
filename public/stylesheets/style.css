@@ -11,13 +11,13 @@
 .justify {
   text-align: justify;
 }
-.floatLeft {
+.float-left {
   float: left;
 }
-.floatRight {
+.float-right {
   float: right;
 }
-.floatNone {
+.float-none {
   float: none;
 }
 .clear {
@@ -130,4 +130,7 @@ body form {
   -webkit-border-radius: 0.2em;
   -moz-border-radius: 0.2em;
   border-radius: 0.2em;
+}
+.twitter-share-button {
+  margin: -2em 0em 0em 0em;
 }
