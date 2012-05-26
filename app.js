@@ -27,7 +27,7 @@ app.configure('production', function(){
 
 app.get('/', routes.root);
 app.get('/tocit', routes.tocit);
-// app.get('/tocit', function (req, res) { console.log ('%s /tocit', req.method); });
+app.get('/fixlayout', routes.fixlayout);
 
 var port = process.env.PORT || 3000;
 app.listen(port, function() {
