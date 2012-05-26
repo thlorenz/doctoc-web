@@ -131,12 +131,9 @@ body {
   height: 2em;
 }
 .button {
-  background: #ffa500;
+  background: #f00;
   margin: 1em;
   -webkit-border-radius: 0.2em;
   -moz-border-radius: 0.2em;
   border-radius: 0.2em;
-  -webkit-box-shadow: 0 0 0.5em #111;
-  -moz-box-shadow: 0 0 0.5em #111;
-  box-shadow: 0 0 0.5em #111;
 }
