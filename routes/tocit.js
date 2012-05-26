@@ -5,7 +5,7 @@ var path      =  require('path'),
 
 
 exports.tocit = function(req, res){
-    console.log('/tocit', req.method);
+    console.log('%s /tocit', req.method);
 
     if (!req.query || !req.query.url) {
         var err = new Error('Query needs to have url');
@@ -19,12 +19,12 @@ exports.tocit = function(req, res){
     var addr    =  url.parse(req.query.url),
         options =  _(addr).extend({ port: 443 });
 
+    console.log(" * processing: %s//%s%s:%s",options.protocol, options.hostname, options.pathname, options.port);
     processor.getHeadersHttps(options, function (err, headers) {
         if (err) {
             console.error(err);
             res.json({ err: err }); 
         } else {
-            console.log('sending:', headers);
             res.json({ headers: headers });
         }
     });
