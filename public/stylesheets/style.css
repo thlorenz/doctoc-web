@@ -125,11 +125,20 @@ body form {
   height: 2em;
 }
 .button {
-  background: #f00;
-  margin: 1em;
-  -webkit-border-radius: 0.2em;
-  -moz-border-radius: 0.2em;
-  border-radius: 0.2em;
+  background: #ffa500;
+  color: #8b0000;
+  margin: 2px;
+  border-color: #000;
+  opacity: 0.9;
+  width: 50px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-border-radius: 0px 10px 10px 0px;
+  -moz-border-radius: 0px 10px 10px 0px;
+  border-radius: 0px 10px 10px 0px;
+  -webkit-box-shadow: 3px 5px 2px 0px #333;
+  -moz-box-shadow: 3px 5px 2px 0px #333;
+  box-shadow: 3px 5px 2px 0px #333;
 }
 .twitter-share-button {
   margin: -2em 0em 0em 0em;
