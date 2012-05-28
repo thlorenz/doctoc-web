@@ -7,6 +7,7 @@
         h1= title
         span 
           | Generates table of content for markdown files inside github repositories
+
         // Twitter
         html
           <a href="https://twitter.com/share" class="twitter-share-button float-right" data-text="I just added a table of content to my #github #markdown page using #doctoc.">Tweet</a>
@@ -30,9 +31,11 @@
             textarea(readonly="readonly")
 
       #page-footer.shadow
-        a(href="https://github.com/thlorenz/doc-toc-web")
-          | source on github
-        a(href="http://www.grsites.com/")
+        a.float-left.tooltip(href="https://github.com/thlorenz/doctoc/blob/master/README.md", data-tip="npm install -g doctoc")
+          | get doctoc app
+        a.float-left(href="https://github.com/thlorenz/doctoc-web")
+          | get source
+        a.float-right(href="http://www.grsites.com/")
           | background image
 
 script(src="javascripts/root.js", type="text/javascript")

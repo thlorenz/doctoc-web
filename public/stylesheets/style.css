@@ -16,6 +16,7 @@
 }
 .float-right {
   float: right;
+  margin-right: 60px;
 }
 .float-none {
   float: none;
@@ -48,6 +49,33 @@
 .shadow {
   color: #fff;
   text-shadow: rgba(0,4,7,0.7) 1px 1px 0px;
+}
+a.tooltip::before {
+  content: attr(data-tip);
+  font-size: 14px;
+  position: absolute;
+  z-index: 999;
+  white-space: nowrap;
+  bottom: 9999px;
+  left: 10%;
+  background: #00d;
+  color: #fff;
+  text-shadow: rgba(0,4,7,0.7) 1px 1px 0px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  padding: 0px 7px;
+  line-height: 34px;
+  height: 34px;
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
+}
+a.tooltip:hover::before {
+  opacity: 1;
+  bottom: -40px;
+}
+a:link {
+  color: #66c;
 }
 html {
   background: #ccc url("../images/background.jpg") top center;
