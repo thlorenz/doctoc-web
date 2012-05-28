@@ -1,7 +1,7 @@
 **Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
 
-- [doc-toc-web](#doc-toc-web)
-- [Install ](#install)
+- [doctoc-web](#doctoc-web)
+	- [Install ](#install)
 
 # doctoc-web
 

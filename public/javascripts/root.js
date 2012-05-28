@@ -17,7 +17,7 @@
             if (data.err) {
                 console.log(data.err);
             } else {
-                var lowestRank = _(data.headers).chain().pluck('rank').min(),
+                var lowestRank = _(data.headers).chain().pluck('rank').min().value(),
                     result = _(data.headers)
                     .map(function (x) {
                         var indent = _(_.range(x.rank - lowestRank)).reduce(function (acc, x) { return acc + '\t'; }, '');
