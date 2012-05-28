@@ -17,16 +17,17 @@
             if (data.err) {
                 console.log(data.err);
             } else {
-                var result = _(data.headers)
+                var lowestRank = _(data.headers).chain().pluck('rank').min(),
+                    result = _(data.headers)
                     .map(function (x) {
-                        var indent = _(_.range(x.rank - 1)).reduce(function (acc, x) { return acc + '\t'; }, '');
+                        var indent = _(_.range(x.rank - lowestRank)).reduce(function (acc, x) { return acc + '\t'; }, '');
 
-                        return indent + '- &lt;a href=&quot;' + x.link + '&quot;&gt;' + x.name + '&lt;/a&gt;';
+                        return indent + '- [' + x.name + '](' + x.link + ')';
                     })
                     .join('\n');
 
-                var title ='**Table of Contents**  *generated with [DocToc](http://doc-toc.herokuapp.com/)*\n';
-                $result.html(title + result);
+                var title ='**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*';
+                $result.html(title +'\n\n' + result);
                 }
             });
     }

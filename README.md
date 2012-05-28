@@ -3,10 +3,10 @@
 - [doc-toc-web](#doc-toc-web)
 - [Install ](#install)
 
-# doc-toc-web
+# doctoc-web
 
 
-This is the source of the [DocToc web application](http://doc-toc.herokuapp.com/).
+This is the source of the [DocToc web application](http://doctoc.herokuapp.com/).
 It generates table of contents for markdown files on github.
 
 ## Install 
@@ -15,6 +15,6 @@ There is no need to install anything. In order to use it just go to above mentio
 
 But if you are so inclined and want to play with it:
 
-    git clone https://github.com/thlorenz/doc-toc-web
-    cd doc-toc-web
+    git clone https://github.com/thlorenz/doctoc-web
+    cd doctoc-web
     npm install
