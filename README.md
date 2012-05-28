@@ -5,9 +5,7 @@
 
 # doctoc-web
 
-
-This is the source of the [DocToc web application](http://doctoc.herokuapp.com/).
-It generates table of contents for markdown files on github.
+Generates table of contents for markdown files on github.
 
 ## Install 
 
