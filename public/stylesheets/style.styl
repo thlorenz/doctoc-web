@@ -1,19 +1,9 @@
 @import 'reset.css'
 @import 'synonyms.styl'
+@import 'functions.styl'
 @import 'tooltip.styl'
 
 centerColWidth = 70em
-
-vendor(prop, args)
-  -webkit-{prop} args
-  -moz-{prop} args
-  {prop} args
-
-border-radius()
-  vendor('border-radius', arguments)
-
-box-shadow()
-  vendor('box-shadow', arguments)
 
 a:link 
   color: #66C
