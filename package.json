@@ -1,5 +1,5 @@
 {
-  "author": "Thorsten Lorenz <thlorenz@gmx.de> (thorstenlorenz.wordpress.com)",
+  "author": "Thorsten Lorenz <thlorenz@gmx.de> (thlorenz.com)",
   "name": "doc-toc=web",
   "description": "Generates table of contents for markdown files on github",
   "version": "0.0.1",
